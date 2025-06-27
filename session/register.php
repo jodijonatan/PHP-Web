@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 <body>
     <?php if ($error != "") { ?>
-        <h2><?= $error ?></h2>
+        <h2><?= htmlspecialchars($error) ?></h2>
     <?php } ?>
     <h1>Register</h1>
     <form action="/session/register.php" method="post">

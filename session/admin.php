@@ -1,4 +1,4 @@
-<?
+<?php
 
 session_start();
 
@@ -14,6 +14,6 @@ $username = $_SESSION['username_admin'];
     <title>admin</title>
 </head>
 <body>
-    <h2>Sukses login sebagai admin <?= $username ?></h2>
+    <h2>Sukses login sebagai admin <?= htmlspecialchars($username) ?></h2>
 </body>
 </html>
